@@ -1,0 +1,10 @@
+{
+  "name": "ts-template",
+  "packageManager": "yarn@3.1.1",
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  },
+  "scripts": {
+    "dev": "yarn tsc && yarn node dist/index.js"
+  }
+}
