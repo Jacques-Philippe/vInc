@@ -36,6 +36,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["@types/jest", "npm:27.4.0"],
+            ["@types/node", "npm:17.0.5"],
+            ["fast-xml-parser", "npm:4.0.0-beta.8"],
             ["jest", "virtual:8a20199d5aa04cd2690b0cb64b0706fcc0aa1affc83208fe6b5371d1a1499e3658c9cc54397a7ebdc9450a55b39ee6e1645f8a9c98834b186e65775304071054#npm:27.4.5"],
             ["ts-jest", "virtual:8a20199d5aa04cd2690b0cb64b0706fcc0aa1affc83208fe6b5371d1a1499e3658c9cc54397a7ebdc9450a55b39ee6e1645f8a9c98834b186e65775304071054#npm:27.1.2"],
             ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
@@ -2228,6 +2230,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["fast-xml-parser", [
+        ["npm:4.0.0-beta.8", {
+          "packageLocation": "./.yarn/cache/fast-xml-parser-npm-4.0.0-beta.8-88c5b6907a-bee9de958a.zip/node_modules/fast-xml-parser/",
+          "packageDependencies": [
+            ["fast-xml-parser", "npm:4.0.0-beta.8"],
+            ["strnum", "npm:1.0.5"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["fb-watchman", [
         ["npm:2.0.1", {
           "packageLocation": "./.yarn/cache/fb-watchman-npm-2.0.1-30005d50fe-8510230778.zip/node_modules/fb-watchman/",
@@ -4361,6 +4373,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["strnum", [
+        ["npm:1.0.5", {
+          "packageLocation": "./.yarn/cache/strnum-npm-1.0.5-9ba11d2a0a-651b2031db.zip/node_modules/strnum/",
+          "packageDependencies": [
+            ["strnum", "npm:1.0.5"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["supports-color", [
         ["npm:5.5.0", {
           "packageLocation": "./.yarn/cache/supports-color-npm-5.5.0-183ac537bc-95f6f4ba5a.zip/node_modules/supports-color/",
@@ -4556,6 +4577,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["ts-template", "workspace:."],
             ["@types/jest", "npm:27.4.0"],
+            ["@types/node", "npm:17.0.5"],
+            ["fast-xml-parser", "npm:4.0.0-beta.8"],
             ["jest", "virtual:8a20199d5aa04cd2690b0cb64b0706fcc0aa1affc83208fe6b5371d1a1499e3658c9cc54397a7ebdc9450a55b39ee6e1645f8a9c98834b186e65775304071054#npm:27.4.5"],
             ["ts-jest", "virtual:8a20199d5aa04cd2690b0cb64b0706fcc0aa1affc83208fe6b5371d1a1499e3658c9cc54397a7ebdc9450a55b39ee6e1645f8a9c98834b186e65775304071054#npm:27.1.2"],
             ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
