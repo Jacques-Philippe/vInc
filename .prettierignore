@@ -1,0 +1,10 @@
+dist
+*.js
+*.mjs
+*.cjs
+*.json
+*.yml
+data
+*yarn
+.editorconfig
+.gitignore

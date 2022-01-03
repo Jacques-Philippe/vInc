@@ -3,8 +3,10 @@
  * For instance, in v1.2.3, 2 is the minor release number
  */
 export class VersionNumberDoesntContainMinorVersionError extends Error {
-    constructor(version_number: string) {
-        super(`Provided version number ${version_number} is missing a minor release version`);
-        Object.setPrototypeOf(this, new.target.prototype); // restore prototype chain
-    }
+  constructor(version_number: string) {
+    super(
+      `Provided version number ${version_number} is missing a minor release version`
+    );
+    Object.setPrototypeOf(this, new.target.prototype); // restore prototype chain
+  }
 }
