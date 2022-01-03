@@ -21,11 +21,11 @@ export const getVersionNumber = async (filename: string): Promise<string> => {
     const result = await fs.readFile(path.join(process.cwd(), filename));
     //get data as string
     const data: string = result.toString();
-    console.log(`Data:\n${data}`);
+    // console.log(`Data:\n${data}`);
 
     //TODO XMLFormatError?
-    if (!XMLValidator.validate(data)) console.error('Bad XML format');
-    else console.log('Valid XML data');
+    // if (!XMLValidator.validate(data)) console.error('Bad XML format');
+    // else console.log('Valid XML data');
     
     
     const parser = new XMLParser();

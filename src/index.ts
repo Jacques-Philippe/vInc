@@ -6,12 +6,15 @@ import { CommandLineInput, ExitProgram, GetCommandLineInput, getVersionNumber } 
     console.log(`Chose ${input}`);
     if (input === CommandLineInput.CANCEL) ExitProgram();
     
-    
-    return;
+    // return;
     //Read file and return version number
-    console.log('Read file and return version number');
     const version_number = await getVersionNumber("data/Consumer.csproj");
     
+    console.log(`Version number ${version_number}`);
+    
+
+    return;
+
     //Increment the number
     console.log('Increment version number');
 
