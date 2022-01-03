@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "yarn tsc && yarn node dist/index.js",
-    "test": "yarn jest"
+    "test": "yarn jest --verbose"
   },
   "jest": {
     "preset": "ts-jest",
