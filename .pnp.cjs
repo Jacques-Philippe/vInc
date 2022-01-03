@@ -37,8 +37,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@types/jest", "npm:27.4.0"],
             ["@types/node", "npm:17.0.5"],
+            ["@types/prompts", "npm:2.4.0"],
             ["fast-xml-parser", "npm:4.0.0-beta.8"],
             ["jest", "virtual:8a20199d5aa04cd2690b0cb64b0706fcc0aa1affc83208fe6b5371d1a1499e3658c9cc54397a7ebdc9450a55b39ee6e1645f8a9c98834b186e65775304071054#npm:27.4.5"],
+            ["prompts", "npm:2.4.2"],
             ["ts-jest", "virtual:8a20199d5aa04cd2690b0cb64b0706fcc0aa1affc83208fe6b5371d1a1499e3658c9cc54397a7ebdc9450a55b39ee6e1645f8a9c98834b186e65775304071054#npm:27.1.2"],
             ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
           ],
@@ -1214,6 +1216,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-prettier-npm-2.4.2-290f200354-76e230b2d1.zip/node_modules/@types/prettier/",
           "packageDependencies": [
             ["@types/prettier", "npm:2.4.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/prompts", [
+        ["npm:2.4.0", {
+          "packageLocation": "./.yarn/cache/@types-prompts-npm-2.4.0-5b5caba459-ec75655f07.zip/node_modules/@types/prompts/",
+          "packageDependencies": [
+            ["@types/prompts", "npm:2.4.0"]
           ],
           "linkType": "HARD",
         }]
@@ -4578,8 +4589,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ts-template", "workspace:."],
             ["@types/jest", "npm:27.4.0"],
             ["@types/node", "npm:17.0.5"],
+            ["@types/prompts", "npm:2.4.0"],
             ["fast-xml-parser", "npm:4.0.0-beta.8"],
             ["jest", "virtual:8a20199d5aa04cd2690b0cb64b0706fcc0aa1affc83208fe6b5371d1a1499e3658c9cc54397a7ebdc9450a55b39ee6e1645f8a9c98834b186e65775304071054#npm:27.4.5"],
+            ["prompts", "npm:2.4.2"],
             ["ts-jest", "virtual:8a20199d5aa04cd2690b0cb64b0706fcc0aa1affc83208fe6b5371d1a1499e3658c9cc54397a7ebdc9450a55b39ee6e1645f8a9c98834b186e65775304071054#npm:27.1.2"],
             ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
           ],
