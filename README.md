@@ -1,6 +1,6 @@
 # Purpose
 
-This project serves as a template for some typescript project. Use it to build on.
+This project serves as a means to interactively increment a .csproj version number.
 
 # How prettier was configured
 
