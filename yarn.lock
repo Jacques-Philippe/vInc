@@ -749,6 +749,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/lodash@npm:^4":
+  version: 4.14.178
+  resolution: "@types/lodash@npm:4.14.178"
+  checksum: a69a04a60bfc5257c3130a554b4efa0c383f0141b7b3db8ab7cf07ad2a46ea085fce66d0242da41da7e5647b133d5dfb2c15add9cbed8d7fef955e4a1e5b3128
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:*, @types/node@npm:^17.0.5":
   version: 17.0.5
   resolution: "@types/node@npm:17.0.5"
@@ -2814,7 +2821,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.7.0":
+"lodash@npm:^4.17.21, lodash@npm:^4.7.0":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
@@ -3932,6 +3939,7 @@ __metadata:
   resolution: "ts-template@workspace:."
   dependencies:
     "@types/jest": ^27.4.0
+    "@types/lodash": ^4
     "@types/node": ^17.0.5
     "@types/prettier": ^2
     "@types/prompts": ^2
@@ -3939,6 +3947,7 @@ __metadata:
     husky: ^7.0.4
     jest: ^27.4.5
     lint-staged: ^12.1.5
+    lodash: ^4.17.21
     prettier: 2.5.1
     prompts: ^2.4.2
     ts-jest: ^27.1.2

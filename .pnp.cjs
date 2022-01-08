@@ -36,6 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["@types/jest", "npm:27.4.0"],
+            ["@types/lodash", "npm:4.14.178"],
             ["@types/node", "npm:17.0.5"],
             ["@types/prettier", "npm:2.4.2"],
             ["@types/prompts", "npm:2.4.0"],
@@ -43,6 +44,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["husky", "npm:7.0.4"],
             ["jest", "virtual:8a20199d5aa04cd2690b0cb64b0706fcc0aa1affc83208fe6b5371d1a1499e3658c9cc54397a7ebdc9450a55b39ee6e1645f8a9c98834b186e65775304071054#npm:27.4.5"],
             ["lint-staged", "npm:12.1.5"],
+            ["lodash", "npm:4.17.21"],
             ["prettier", "npm:2.5.1"],
             ["prompts", "npm:2.4.2"],
             ["ts-jest", "virtual:8a20199d5aa04cd2690b0cb64b0706fcc0aa1affc83208fe6b5371d1a1499e3658c9cc54397a7ebdc9450a55b39ee6e1645f8a9c98834b186e65775304071054#npm:27.1.2"],
@@ -1202,6 +1204,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:27.4.0"],
             ["jest-diff", "npm:27.4.2"],
             ["pretty-format", "npm:27.4.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/lodash", [
+        ["npm:4.14.178", {
+          "packageLocation": "./.yarn/cache/@types-lodash-npm-4.14.178-5433b9ed68-a69a04a60b.zip/node_modules/@types/lodash/",
+          "packageDependencies": [
+            ["@types/lodash", "npm:4.14.178"]
           ],
           "linkType": "HARD",
         }]
@@ -4896,6 +4907,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["ts-template", "workspace:."],
             ["@types/jest", "npm:27.4.0"],
+            ["@types/lodash", "npm:4.14.178"],
             ["@types/node", "npm:17.0.5"],
             ["@types/prettier", "npm:2.4.2"],
             ["@types/prompts", "npm:2.4.0"],
@@ -4903,6 +4915,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["husky", "npm:7.0.4"],
             ["jest", "virtual:8a20199d5aa04cd2690b0cb64b0706fcc0aa1affc83208fe6b5371d1a1499e3658c9cc54397a7ebdc9450a55b39ee6e1645f8a9c98834b186e65775304071054#npm:27.4.5"],
             ["lint-staged", "npm:12.1.5"],
+            ["lodash", "npm:4.17.21"],
             ["prettier", "npm:2.5.1"],
             ["prompts", "npm:2.4.2"],
             ["ts-jest", "virtual:8a20199d5aa04cd2690b0cb64b0706fcc0aa1affc83208fe6b5371d1a1499e3658c9cc54397a7ebdc9450a55b39ee6e1645f8a9c98834b186e65775304071054#npm:27.1.2"],

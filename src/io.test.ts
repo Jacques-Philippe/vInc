@@ -92,4 +92,10 @@ describe("Version number tests", () => {
       versionNumberMadeUpOfThreeElementsSeparatedByPeriods("1.1.abc1")
     ).toThrow(VersionNumberIsntOnlyNumbersError);
   });
+
+  type ConcernedProperties = {
+    propA: string;
+  };
+
+  test("", () => {});
 });

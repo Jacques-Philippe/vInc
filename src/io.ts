@@ -2,18 +2,7 @@ import { promises as fs } from "fs";
 import * as path from "path";
 import { XMLParser, XMLValidator } from "fast-xml-parser";
 import prompts from "prompts";
-
-type PropertyGroup = {
-  Version: string;
-};
-
-type Project = {
-  PropertyGroup: PropertyGroup;
-};
-
-type CsProjFile = {
-  Project: Project;
-};
+import { CsProjFile } from "./types";
 
 export const getVersionNumber = async (filename: string): Promise<string> => {
   //read file,
@@ -26,10 +15,10 @@ export const getVersionNumber = async (filename: string): Promise<string> => {
   // if (!XMLValidator.validate(data)) console.error('Bad XML format');
   // else console.log('Valid XML data');
 
-  const parser = new XMLParser();
-
   //parse string to XML, cast data to Project
-  const project = (new XMLParser().parse(data) as CsProjFile).Project;
+  const project = (
+    new XMLParser({ ignoreAttributes: false }).parse(data) as CsProjFile
+  ).Project;
 
   //return Version property
   // console.log(`Object stringified\n${project.PropertyGroup.Version}`);
