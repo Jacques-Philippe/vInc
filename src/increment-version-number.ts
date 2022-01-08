@@ -20,7 +20,9 @@ export const incrementVersionNumber = (
 
   switch (input) {
     case CommandLineInput.MAJOR: {
-      return toVersionNumber(increment(major), minor, patch);
+      return "v".concat(
+        toVersionNumber(increment(major.replace("v", "")), minor, patch)
+      );
     }
     case CommandLineInput.MINOR: {
       return toVersionNumber(major, increment(minor), patch);

@@ -1,16 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
-  
-<ItemGroup>
-  <ProjectReference Include="..\\Calculator\\Calculator.csproj" />
-</ItemGroup>
-
-<PropertyGroup>
-  <PackageId>Test-CalculatorApp</PackageId>
-  <Version>${version_number}</Version>
-  <Authors>Jacques-Philippe Amiot</Authors>
-  <Company>Not A Company Inc.</Company>
-  <OutputType>Exe</OutputType>
-  <TargetFramework>net5.0</TargetFramework>
-</PropertyGroup>
-
-</Project>
+<Project Sdk="Microsoft.NET.Sdk"><ItemGroup><ProjectReference
+      Include="..\Calculator\Calculator.csproj"
+    /></ItemGroup><PropertyGroup><PackageId
+    >Test-CalculatorApp</PackageId><Version>v1.0.0</Version><Authors
+    >Jacques-Philippe Amiot</Authors><Company
+    >Not A Company Inc.</Company><OutputType>Exe</OutputType><TargetFramework
+    >net5.0</TargetFramework></PropertyGroup></Project>

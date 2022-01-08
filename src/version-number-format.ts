@@ -30,12 +30,8 @@ export const versionNumberMadeUpOfThreeElementsSeparatedByPeriods = (
     PATCH,
   }
 
-  // console.log(`version number: ${version_number}\nelements: ${elements}`);
-
   for (let index = 0; index < elements.length; index++) {
     const number_string = elements[index];
-    // const length = elements[index].length;
-    // console.log(`${item} has length ${length}`);
 
     const itemIsEmpty = number_string.length < 1;
 

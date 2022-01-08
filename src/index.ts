@@ -20,7 +20,7 @@ import { writeNewVersionToFile } from "./write-new-version-to-file";
 
   //Increment the number
   console.log(`${old_version_number} -> ${new_version_number}`);
-  writeNewVersionToFile(new_version_number, INPUT_FILENAME);
 
-  // await writeNewVersionToFile(new_version_number, INPUT_FILENAME)
+  await writeNewVersionToFile(new_version_number, INPUT_FILENAME);
+  console.log(`Version number written to file ${INPUT_FILENAME}`);
 })();
