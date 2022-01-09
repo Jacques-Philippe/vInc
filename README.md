@@ -30,3 +30,7 @@ See [the following readme](https://classic.yarnpkg.com/en/package/lint-staged)
 
 We use `yarn pack`, which really is just `npm pack`. You can find more documentation about this process [here](https://docs.npmjs.com/cli/v8/using-npm/developers#what-is-a-package)  
 As such, any files which are meant to be excluded from the build are specified in our `.npmignore` file.
+
+## Fun fact for packing
+
+You can use `yarn pack --dry-run` to get a list of all files which would be included in the tarball package. You can also use `yarn add path/to/package` to try installing the package before publishing.
