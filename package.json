@@ -1,5 +1,11 @@
 {
-  "name": "ts-template",
+  "name": "version-incrementor",
+  "author": "Jacques-Philippe Amiot",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jacques-Philippe/vInc"
+  },
+  "description": "A package to manage incrementing of a version file",
   "packageManager": "yarn@3.1.1",
   "dependencies": {
     "fast-xml-parser": "^4.0.0-beta.8",

@@ -28,4 +28,5 @@ See [the following readme](https://classic.yarnpkg.com/en/package/lint-staged)
 
 # How the executable was made
 
-We use [yarn package pkg](https://classic.yarnpkg.com/en/package/pkg) to create executables from our nodejs project.
+We use `yarn pack`, which really is just `npm pack`. You can find more documentation about this process [here](https://docs.npmjs.com/cli/v8/using-npm/developers#what-is-a-package)  
+As such, any files which are meant to be excluded from the build are specified in our `.npmignore` file.

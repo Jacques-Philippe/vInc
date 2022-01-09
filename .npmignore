@@ -1,0 +1,6 @@
+dist
+.vscode
+src/**/*.test.ts 
+.editorconfig
+.git*
+.prettier*

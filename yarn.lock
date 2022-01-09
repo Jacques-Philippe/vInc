@@ -3934,27 +3934,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-template@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "ts-template@workspace:."
-  dependencies:
-    "@types/jest": ^27.4.0
-    "@types/lodash": ^4
-    "@types/node": ^17.0.5
-    "@types/prettier": ^2
-    "@types/prompts": ^2
-    fast-xml-parser: ^4.0.0-beta.8
-    husky: ^7.0.4
-    jest: ^27.4.5
-    lint-staged: ^12.1.5
-    lodash: ^4.17.21
-    prettier: 2.5.1
-    prompts: ^2.4.2
-    ts-jest: ^27.1.2
-    typescript: ^4.5.4
-  languageName: unknown
-  linkType: soft
-
 "tslib@npm:^2.1.0":
   version: 2.3.1
   resolution: "tslib@npm:2.3.1"
@@ -4056,6 +4035,29 @@ __metadata:
   checksum: c7dabf9567e0c210b24d0720e553803cbe1ff81edb1ec7f2080eb4be01ed081a40286cc9f4aaa86d1bf8d57840cefae8fdf326b7cb8faa316ba50c7b948030d4
   languageName: node
   linkType: hard
+
+"version-incrementor@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "version-incrementor@workspace:."
+  dependencies:
+    "@types/jest": ^27.4.0
+    "@types/lodash": ^4
+    "@types/node": ^17.0.5
+    "@types/prettier": ^2
+    "@types/prompts": ^2
+    fast-xml-parser: ^4.0.0-beta.8
+    husky: ^7.0.4
+    jest: ^27.4.5
+    lint-staged: ^12.1.5
+    lodash: ^4.17.21
+    prettier: 2.5.1
+    prompts: ^2.4.2
+    ts-jest: ^27.1.2
+    typescript: ^4.5.4
+  bin:
+    version-incrementor: dist/index.js
+  languageName: unknown
+  linkType: soft
 
 "w3c-hr-time@npm:^1.0.2":
   version: 1.0.2
