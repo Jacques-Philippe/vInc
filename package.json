@@ -38,5 +38,7 @@
   "lint-staged": {
     "*.ts": "prettier --write --ignore-unknown"
   },
-  "files": ["dist/**/*.js"]
+  "files": ["dist/**/*.js"],
+  "types": "dist/**/*.d.ts",
+  "bin": "dist/index.js"
 }
