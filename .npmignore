@@ -4,3 +4,5 @@ src/**/*.test.ts
 .editorconfig
 .git*
 .prettier*
+
+azure-pipelines.yml
