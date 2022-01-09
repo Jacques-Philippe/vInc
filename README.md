@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/jacquespamiot/version-incrementor/_apis/build/status/Jacques-Philippe.vInc?branchName=azure-pipelines)](https://dev.azure.com/jacquespamiot/version-incrementor/_build/latest?definitionId=2&branchName=azure-pipelines)
+
 # Purpose
 
 This project serves as a means to interactively increment a .csproj version number.
