@@ -1,4 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+bash ./scripts/execute_tests.sh
 yarn lint-staged
