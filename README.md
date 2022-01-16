@@ -37,10 +37,12 @@ Where `Consumer` is expected to contain some XML with a version number in the sa
 </Project>
 
 ```
+
 # How to get started (user)
+
 1. Download whichever binary you need from the release
-1. Ensure the binary can be executed on your system. This might mean explicitly telling your system to trust the file.   
-    For Mac, make the file executable with a `chmod +x [file]`, try running the file, it won't work, then go to `Security and Privacy` and allow the app to be opened.
+1. Ensure the binary can be executed on your system. This might mean explicitly telling your system to trust the file.  
+   For Mac, make the file executable with a `chmod +x [file]`, try running the file, it won't work, then go to `Security and Privacy` and allow the app to be opened.
 1. You should then be able to execute the binary.
 
 # How to get started (dev)
@@ -65,7 +67,7 @@ So for instance, to run the tests, we can say
 yarn test
 ```
 
-# How prettier was configured
+# How prettier was configured :)
 
 See [the following readme](https://classic.yarnpkg.com/en/package/lint-staged)
 
