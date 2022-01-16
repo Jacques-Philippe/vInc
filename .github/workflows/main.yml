@@ -1,9 +1,9 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Run tests and build on push or pull request
+name: Run tests and build on push
 
 # Controls when the workflow will run
-on: [push, pull_request]
+on: [push]
   
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
