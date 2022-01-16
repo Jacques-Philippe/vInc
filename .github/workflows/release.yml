@@ -4,10 +4,9 @@ name: Deploy tagged release on tagged push to master
 
 on:
   push:
-    branches:
-      - master
     tags:
       - "v*"
+    
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -27,14 +26,15 @@ jobs:
       - name: Install yarn
         run: npm i -g yarn
         
-      - name: Compile to single-file .js
-        run: yarn ncc build dist/index.js -o out
+      - name: Build dist
+        run: yarn build
         
-      - name: Generate Linux x64 binary executable
-        run: yarn nexe out/index.js -o vInc -t linux-x64 --build
+      - name: Install pkg
+        run: npm i -g pkg
         
-      - name: Generate Windows x64 binary executable
-        run: yarn nexe out/index.js -o vInc -t windows-x64 --build
+      - name: Create binaries
+        run: pkg dist/index.js -o vInc -t node16-macos-x64,node16-macos-arm64,node16-win-x64,node16-linux-x64
+        
       
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
