@@ -37,12 +37,18 @@ Where `Consumer` is expected to contain some XML with a version number in the sa
 </Project>
 
 ```
+# How to get started (user)
+1. Download whichever binary you need from the release
+1. Ensure the binary can be executed on your system. This might mean explicitly telling your system to trust the file.   
+    For Mac, make the file executable with a `chmod +x [file]`, try running the file, it won't work, then go to `Security and Privacy` and allow the app to be opened.
+1. You should then be able to execute the binary.
 
 # How to get started (dev)
 
 1. Make sure you've installed, in this order, `nvm`, `npm`, and `yarn`; the last can be installed via `npm -g i yarn`
 1. Make sure your yarn `node_linker` is set to pnp, you can know whether this is done by checking the contents of `~/yarnrc.yml`.
 1. You may need to run a `yarn` or something in the project root directory
+1. You'll definitely need to run `yarn prepare` for the pre-commit hooks to set up.
 1. After that, you should be able to run the `package.json` commands from this project's root.
 
 ## Running package.json commands
