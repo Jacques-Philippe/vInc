@@ -2,12 +2,47 @@
 
 # Purpose
 
-This project serves as a means to interactively increment a .csproj version number.
+A small console application to increment a version number in an xml file. Version number should conform to the format `v[major].[minor].[patch]`
+
+# Usage
+
+```
+./vInc ./data/Consumer.csproj
+```
+
+or
+
+```
+./vInc ./data/Consumer.xml
+```
+
+On execution, the program will ask whether the user wishes to increment the major version number, the minor version number, or the patch number.
+Where `Consumer` is expected to contain some XML with a version number in the same place as the following
+
+```
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <ProjectReference
+            Include="..\Calculator\Calculator.csproj"
+        />
+    </ItemGroup>
+    <PropertyGroup>
+        <PackageId>Test-CalculatorApp</PackageId>
+        <Version>v2.1.1</Version>
+        <Authors>Jacques-Philippe Amiot</Authors>
+        <Company>Not A Company Inc.</Company>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+</Project>
+
+```
 
 # How to get started (dev)
 
 1. Make sure you've installed, in this order, `nvm`, `npm`, and `yarn`; the last can be installed via `npm -g i yarn`
 1. Make sure your yarn `node_linker` is set to pnp, you can know whether this is done by checking the contents of `~/yarnrc.yml`.
+1. You may need to run a `yarn` or something in the project root directory
 1. After that, you should be able to run the `package.json` commands from this project's root.
 
 ## Running package.json commands
@@ -28,7 +63,11 @@ yarn test
 
 See [the following readme](https://classic.yarnpkg.com/en/package/lint-staged)
 
-# How the executable was made
+# How the executable binary was made
+
+We use `ncc` to compile the application into a single .js file. We then use `nexe` to create an executable binary.
+
+# How the node package was made
 
 We use `yarn pack`, which really is just `npm pack`. You can find more documentation about this process [here](https://docs.npmjs.com/cli/v8/using-npm/developers#what-is-a-package)  
 As such, any files which are meant to be excluded from the build are specified in our `.npmignore` file.

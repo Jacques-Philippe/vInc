@@ -11,3 +11,5 @@
 
 dist
 *.tgz
+out
+vInc*
