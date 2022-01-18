@@ -1,4 +1,5 @@
 [![Build Status](https://dev.azure.com/jacquespamiot/version-incrementor/_apis/build/status/Jacques-Philippe.vInc?branchName=azure-pipelines)](https://dev.azure.com/jacquespamiot/version-incrementor/_build/latest?definitionId=2&branchName=azure-pipelines)
+![Build & Test workflow](https://github.com/Jacques-Philippe/vInc/actions/workflows/main.yml/badge.svg)
 
 # Purpose
 
