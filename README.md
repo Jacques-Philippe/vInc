@@ -38,10 +38,12 @@ Where `Consumer` is expected to contain some XML with a version number in the sa
 </Project>
 
 ```
+
 # How to get started (user)
+
 1. Download whichever binary you need from the release
-1. Ensure the binary can be executed on your system. This might mean explicitly telling your system to trust the file.   
-    For Mac, make the file executable with a `chmod +x [file]`, try running the file, it won't work, then go to `Security and Privacy` and allow the app to be opened.
+1. Ensure the binary can be executed on your system. This might mean explicitly telling your system to trust the file.  
+   For Mac, make the file executable with a `chmod +x [file]`, try running the file, it won't work, then go to `Security and Privacy` and allow the app to be opened.
 1. You should then be able to execute the binary.
 
 # How to get started (dev)
@@ -72,12 +74,17 @@ See [the following readme](https://classic.yarnpkg.com/en/package/lint-staged)
 
 # How the executable binary was made
 
-We use `ncc` to compile the application into a single .js file. We then use `nexe` to create an executable binary.
+We use `ncc` to compile the application into a single .js file, and we then use `pkg` to create executable binaries from that single .js file.
 
-# How the node package was made
+# How to make an executable binary
 
-We use `yarn pack`, which really is just `npm pack`. You can find more documentation about this process [here](https://docs.npmjs.com/cli/v8/using-npm/developers#what-is-a-package)  
-As such, any files which are meant to be excluded from the build are specified in our `.npmignore` file.
+Run the following command
+
+```
+yarn build && yarn compile && yarn build-exe
+```
+
+You should find executable binaries in the `bin` directory
 
 ## Fun fact for packing
 
