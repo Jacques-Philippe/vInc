@@ -3920,7 +3920,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/json5-npm-2.2.0-da49dc7cb5-e88fc5274b.zip/node_modules/json5/",
           "packageDependencies": [
             ["json5", "npm:2.2.0"],
-            ["minimist", "npm:1.2.5"]
+            ["minimist", "npm:1.2.8"]
           ],
           "linkType": "HARD",
         }]
@@ -4208,10 +4208,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["minimist", [
-        ["npm:1.2.5", {
-          "packageLocation": "./.yarn/cache/minimist-npm-1.2.5-ced0e1f617-86706ce5b3.zip/node_modules/minimist/",
+        ["npm:1.2.8", {
+          "packageLocation": "./.yarn/cache/minimist-npm-1.2.8-d7af7b1dce-75a6d645fb.zip/node_modules/minimist/",
           "packageDependencies": [
-            ["minimist", "npm:1.2.5"]
+            ["minimist", "npm:1.2.8"]
           ],
           "linkType": "HARD",
         }]
@@ -4705,7 +4705,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fs-extra", "npm:9.1.0"],
             ["globby", "npm:11.1.0"],
             ["into-stream", "npm:6.0.0"],
-            ["minimist", "npm:1.2.5"],
+            ["minimist", "npm:1.2.8"],
             ["multistream", "npm:4.1.0"],
             ["node-notifier", null],
             ["pkg-fetch", "npm:3.2.6"],
@@ -4757,7 +4757,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["detect-libc", "npm:1.0.3"],
             ["expand-template", "npm:2.0.3"],
             ["github-from-package", "npm:0.0.0"],
-            ["minimist", "npm:1.2.5"],
+            ["minimist", "npm:1.2.8"],
             ["mkdirp-classic", "npm:0.5.3"],
             ["napi-build-utils", "npm:1.0.2"],
             ["node-abi", "npm:2.30.1"],
@@ -4909,7 +4909,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rc", "npm:1.2.8"],
             ["deep-extend", "npm:0.6.0"],
             ["ini", "npm:1.3.8"],
-            ["minimist", "npm:1.2.5"],
+            ["minimist", "npm:1.2.8"],
             ["strip-json-comments", "npm:2.0.1"]
           ],
           "linkType": "HARD",
